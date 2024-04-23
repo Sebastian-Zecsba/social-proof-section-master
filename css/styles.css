@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+:root{
+    /* Primary */
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.8rem;
+    align-items: center;
+}
+
+.header{
+    width: 50%;
+}
+
+.header h1{
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    font-size: 6.2rem;
+    margin-bottom: 30px;
+}
+
+.header p{
+    color: var(--dark-grayish-magenta);
+    font-weight: 400;
+    font-size: 2.1rem;
+}
+
+.boxReviews{
+    width: 50%;
+    margin: auto;
+}
+
+.boxStartReviews{
+    display: flex;
+    width: 70%;
+    background: var(--light-grayish-magenta);
+    padding: 20px;
+    margin: 17px;
+    border-radius: 10px;
+}
+
+.boxStartReviews img{
+    margin: 3px;
+}
+
+.boxStartReviews p{
+    align-content: center;
+    margin-left: 50px;
+    color: var(--very-dark-magenta);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.boxTwoStart{
+    margin-left: 60px;
+}
+
+.boxThreeStart{
+    margin-left: 110px;
+}
+
+.mainFooter{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.boxFooter{
+    background: var(--very-dark-magenta);
+    padding: 40px;
+    border-radius: 10px;
+    width: 32%;
+}
+
+.sectionFooter{
+    display: flex;
+    align-items: center;
+}
+
+.sectionInformationFooter{
+    margin-left: 40px;
+}
+
+.sectionInformationFooter h2{
+    font-size: 2rem;
+}
+
+.sectionInformationFooter p{
+    font-size: 1.5rem;
+}
+
+.sectionFooter img{
+    border-radius: 50%;
+}
+
+.sectionInformationFooter h2{
+    color: var(--white);
+}
+
+.sectionInformationFooter p{
+    color: var(--soft-pink);
+}
+
+.mainTextFooter{
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 2rem 0;
+}
+
+.boxFooterTwo{
+    margin-top: 25px;
+}
+
+.boxFooterThree{
+    margin-top: 50px;
+}
+
+/* Responsive desing */
+
+@media only screen and (max-width: 1200px) {
+    body{
+        padding: 2rem;
+    }
+
+    .boxStartReviews{
+        width: 80%;
+    }
+
+    .header h1{
+        color: var(--very-dark-magenta);
+        font-weight: 700;
+        font-size: 5rem;
+        margin-bottom: 30px;
+    }
+    
+    .header p{
+        color: var(--dark-grayish-magenta);
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+
+    .mainFooter{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .boxFooter{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 992px){
+
+    .header h1{
+        color: var(--very-dark-magenta);
+        font-weight: 700;
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+    
+    .header p{
+        color: var(--dark-grayish-magenta);
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+
+    .boxStartReviews{
+        width: 95%;
+    }
+
+    .boxOneStart{
+        margin-left: 0;
+    }
+
+    .boxTwoStart{
+        margin-left: 0;
+    }
+    
+    .boxThreeStart{
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        display: flex;
+    }
+
+    .header{
+        width: 100%;
+    }
+
+    .header h1{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    
+    .header p{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .boxReviews{
+        width: 100%;
+    }
+
+    .boxStartReviews{
+        align-items: center;
+        margin: 25px auto;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .boxStats{
+        width: 100%;
+        text-align: center;
+    }
+    .boxStats img{
+        width: 6%;
+    }
+
+    .boxStartReviews p{
+        margin: 10px;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .boxStats img{
+        width: 8%;
+    }
+
+    .boxStartReviews{
+        width: 100%;
+    }
+}
